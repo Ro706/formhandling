@@ -9,13 +9,13 @@ function App() {
     formState: {isSubmitting , errors }
   } = useForm();
 
-  const delay=(d) =>{
-    return new Promise((resolve,reject) => {
-      setTimeout(() => {
-        resolve();
-      }, d*1000);
-    });
-  }
+  // const delay=(d) =>{
+  //   return new Promise((resolve,reject) => {
+  //     setTimeout(() => {
+  //       resolve();
+  //     }, d*1000);
+  //   });
+  // }
   const onSubmit =  async (data) => {
     let r = await fetch("http://localhost:3000", {
       method: "POST",
